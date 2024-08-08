@@ -1,4 +1,4 @@
-import {  gridImage1, gridImage2, gridImage3 } from "/images.js"
+import {  gridImage1, gridImage2, gridImage3 } from "./images.js"
 
 gsap.registerPlugin(ScrollTrigger)
 
