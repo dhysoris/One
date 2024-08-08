@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-gray: #eeeeee;
+    --gray: #c1c1c3;
+    --brown: #726255;
+    --dark-gray: #3b3b3b;
+    --black: #000000;
+}
+
+body {
+    background: black;
+}
+
+h1,
+h3 {
+    color: white;
+}
+
+/* Lenis */
+
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+/* Frame */
+
+/* .frame {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+} */
+
+.grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    mix-blend-mode: difference;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "t-left t-right"
+    "... ..."
+    "b-left b-right";
+
+    h3 {
+        mix-blend-mode: difference;
+
+    }
+
+    i {
+        font-size: 1.3rem;
+        padding: 1rem;
+        align-self: center;
+        color: white;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.top-left {
+    grid-area: t-left;
+    justify-content: flex-start;
+}
+
+.top-right {
+    grid-area: t-right;
+    justify-content: flex-end;
+}
+
+.bottom-left {
+    grid-area: b-left;
+    justify-content: flex-start;
+}
+
+.bottom-right {
+    grid-area: b-right;
+    justify-content: flex-end;
+}
+
+/* Frame Two */
+
+.frame2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.frame-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+
+    mix-blend-mode: difference;
+}
+
+.front-title {
+    font-family: "Neue Montreal";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: clamp(2rem, 15cqi, 15rem);
+
+    animation: background-pan 25s linear infinite;
+    background: linear-gradient(
+        to right, 
+        var(--light-gray),
+        var(--gray),
+        var(--brown),
+        var(--dark-gray),
+        var(--black),
+        var(--light-gray)
+
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    mix-blend-mode: difference;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+.front-subtitles {
+    font-size: 2rem;
+    mix-blend-mode: difference;
+
+}
+
+/* Main */
+
+main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+p {
+    font-size: clamp(2rem, 4vw, 10rem);
+    font-family: "Neue Montreal";
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+ 
+    color: white;
+    mix-blend-mode: difference;
+}
+
+span {
+    opacity: .1;
+}
+
+/* masonry grid */
+
+.masonry__grid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid__flow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    grid-template-areas: "a1 a2 a3";
+    gap: .7rem;
+    padding: .7rem;
+}
+
+.grid__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid__image__container {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    height: 32rem;
+
+    /* border: 1px solid white; */
+    margin-bottom: .7rem;
+
+    img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.grid__image__container:nth-child(1) {
+    grid-area: a1;
+}
+
+.grid__image__container:nth-child(2) {
+    grid-area: a2;
+}
+
+.grid__image__container:nth-child(3) {
+    grid-area: a3;
+}
+
+.grid__container:nth-child(2) .grid__image__container:nth-child(2) {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.grid__container:nth-child(2) .grid__image__container:nth-child(3) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.grid__container:nth-child(2) .grid__image__container:nth-child(4) {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.group {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-family: "Neue Montreal";
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        will-change: transform;
+    }
+}
+
+/* pixel grid */
+
+.image__pixel__grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.pixel__color {
+    transition: 1s;
+}
+
+.pixel__color:hover {
+    background: white;
+    transition: 0s;
+}
+
+
+
+
