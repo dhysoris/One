@@ -30,7 +30,7 @@ let gridImage2 = [
     image: "images/7.webp",
 },
 {
-    image: "images/16.webp",
+    image: "images/16.png",
 },
 
 {
@@ -41,7 +41,7 @@ let gridImage2 = [
 
 let gridImage3 = [
     {
-        image: "images/17.webp",
+        image: "images/17.png",
     },
 {
     image: "images/12.webp",
