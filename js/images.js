@@ -1,18 +1,18 @@
 const gridImage1 = [
 {
-    image: "/Awwwards\ Websites/14-/1.webp",
+    image: "images/1.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/2.webp",
+    image: "images/2.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/3.webp",
+    image: "images/3.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/4.webp",
+    image: "images/4.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/5.webp",
+    image: "images/5.webp",
 },
 ]
 
@@ -21,39 +21,39 @@ let gridImage2 = [
  
 
     {
-        image: "/Awwwards\ Websites/14-/11.webp",
+        image: "images/11.webp",
     },
 {
-    image: "/Awwwards\ Websites/14-/6.webp",
+    image: "images/6.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/7.webp",
+    image: "images/7.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/16.png",
+    image: "images/16.webp",
 },
 
 {
-    image: "/Awwwards\ Websites/14-/10.webp",
+    image: "images/10.webp",
 },
 ]
 
 
 let gridImage3 = [
     {
-        image: "/Awwwards\ Websites/14-/17.png",
+        image: "images/17.webp",
     },
 {
-    image: "/Awwwards\ Websites/14-/12.webp",
+    image: "images/12.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/13.webp",
+    image: "images/13.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/14.webp",
+    image: "images/14.webp",
 },
 {
-    image: "/Awwwards\ Websites/14-/15.webp",
+    image: "images/15.webp",
 },
 ]
 
