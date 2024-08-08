@@ -1,5 +1,5 @@
 
-import { gridImage1, gridImage2, gridImage3 } from "images.js"
+import { gridImage1, gridImage2, gridImage3 } from "/images.js"
 
 
 const grid = document.querySelector(".masonry__grid")
