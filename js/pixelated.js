@@ -18,7 +18,7 @@ const pixelImagegrid = document.querySelectorAll(".image__pixel__grid")
 
 function add () {
     pixelImagegrid.forEach(pixel => {
-        for (let i = 0; i < 900; i++) {
+        for (let i = 0; i < 625; i++) {
             const tGrid = document.createElement("div")
             tGrid.classList.add("pixel__color")
             
